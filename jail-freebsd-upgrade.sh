@@ -17,7 +17,7 @@ JAIL_NAME=$1
 JAIL_TARGET_RELEASE=$2
 
 # test if jail exists
-LIST=`jls name | grep "$JAIL_NAME" | wc -l`
+LIST=`jls name | grep '^'"$JAIL_NAME"'$' | wc -l`
 if [ "$LIST" -eq "0" ]; then
         echo "jail: $JAIL_NAME not exists"
         exit 1
