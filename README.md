@@ -44,6 +44,6 @@ usage:
 brutal update/upgrade pkg on all jails found in jls
 
 usage:
-./jail-freebsd-upgrade.sh
+./jail-pkg-upgrade.sh
 
 
